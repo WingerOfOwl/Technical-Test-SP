@@ -1,0 +1,225 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 1048576 bytes. Error detail: AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   This process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (allocation.cpp:44), pid=13044, tid=25924
+#
+# JRE version:  (17.0.14+7) (build )
+# Java VM: OpenJDK 64-Bit Server VM (17.0.14+7, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dgroovy.home=C:\Users\murdo/.groovy -Djava.system.class.loader=groovy.lang.GroovyClassLoader -Xmx2048m -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages org.codehaus.groovy.tools.GroovyStarter --classpath C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\keyword;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\Keywords;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\listener;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\Test Listeners;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\lib;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\Libs;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\groovy;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\Include\scripts\groovy;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.core_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\aalto-xml-1.0.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\aspectjweaver-1.9.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\aws-2.20.3-fat.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\browsermob-core-2.1.5.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\byte-buddy-1.14.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\byte-buddy-agent-1.14.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\cglib-3.2.10.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-codec-1.10.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-collections4-4.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-javaflow-20060411.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-logging-1.3.4.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-validator-1.6.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\curvesapi-1.04.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\dnsjava-3.6.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\ecj-3.21.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\fontbox-3.0.4.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\groovy-3.0.17.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\jackson-coreutils-2.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\jackson-coreutils-equivalence-1.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\jasperreports-6.20.5.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\jasperreports-fonts-6.20.5.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\java-client-9.2.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\javax.servlet-api_3.1.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\jna-5.12.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\jna-platform-5.12.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\json-schema-core-1.2.14.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\json-schema-validator-2.2.14.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\jzlib-1.1.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\kat-server.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\littleproxy-1.1.0-beta-bmp-17.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\log4j-1.2-api-2.17.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\log4j-api-2.17.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\log4j-core-2.17.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\mitm-2.1.5.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\mockito-core-5.2.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\mockito-inline-5.2.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\objenesis-3.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\openpdf-1.3.30.jaspersoft.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\pdfbox-3.0.4.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\pdfbox-io-3.0.4.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\poi-3.17.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\poi-ooxml-3.17.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\poi-ooxml-schemas-3.17.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\proxy-vole-1.1.5-jar-with-dependencies.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\repackaged-sikuli-api-1.0.2-standalone.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\selenium-shutterbug-1.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\soap-builder-1.0.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\soap-common-1.0.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\soap-legacy-1.0.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\spring-context-5.3.19.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\stax2-api-4.0.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\su.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\swagger-parser-1.0.67-fat.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\uri-template-0.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\wadl.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\xmlbeans-3.1.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\net.sf.supercsv.super-csv_2.4.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.commons-io_2.16.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.lang_2.6.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.google.gson_2.11.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.jsoup_1.14.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.dbutils_1.6.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.oracle.jdbc.ojdbc7_12.1.0.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.postgresql.jdbc_42.7.3.jar;c:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.eclipse.osgi_3.21.0.v20240717-2103.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.constant_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.eclipse.persistence.eclipselink_2.7.11.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.selenium-standalone_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\atu.testrecorder.screen-recorder_2.1.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.google.guava_33.4.0.jre.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.util_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.httpcomponents.httpclient_4.5.14.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.httpcomponents.httpcore_4.4.16.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.httpcomponents.httpmime_4.5.13.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.lang3_3.16.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.greenrobot.eventbus_3.1.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\net.bytebuddy.byte-buddy_1.15.11.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.junit_4.13.2.v20230809-1000.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.fasterxml.jackson.core.jackson-databind_2.17.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.fasterxml.jackson.core.jackson-core_2.17.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.fasterxml.jackson.core.jackson-annotations_2.17.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\slf4j.api_2.0.16.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.fusesource.jansi_1.17.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.netlightbody_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.poi_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.commons-text_1.10.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.proxyvole_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.microsoft.sqlserver.mssql-jdbc_6.2.2.jre8.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.github.kklisura.cdt.java-client_2.1.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\javax.websocket-api_1.1.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.glassfish.tyrus.container-grizzly-client_1.13.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.glassfish.grizzly.http-server_2.3.25.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.glassfish.grizzly.framework_2.3.25.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.glassfish.grizzly.http_2.3.25.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.glassfish.tyrus.client_1.13.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.glassfish.tyrus.core_1.13.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.glassfish.tyrus.spi_1.13.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\javassist_3.28.0.GA.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\graphql-java_22.3.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.glassfish.jaxb.runtime_2.3.6.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.glassfish.jaxb.txw2_2.3.6.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.dom4j_2.1.4.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.groovy-extended_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.sun.activation.javax.activation_1.2.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\jakarta.xml.bind-api_4.0.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.eclipse.jface_3.35.0.v20240820-2045.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.logging_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\json_20240303.0.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\assertj-core_3.25.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.networknt.json-schema-validator_1.0.66.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.network.apache_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.network.core_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\java-dataloader_3.3.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.collections_3.2.2.v201511171945.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.commons-collections4_4.4.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.digester_2.1.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\stax2-api_4.2.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.fasterxml.woodstox.woodstox-core_6.6.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.logging_1.2.0.v20180409-1502.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.report.core_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.commons-beanutils_1.9.4.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-api_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-remote-driver_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-http_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\ch.qos.logback.classic_1.3.15.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\ch.qos.logback.core_1.3.15.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\log4j.over.slf4j_1.7.36.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.hamcrest.core_1.3.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.beanshell.bsh_2.0.0.0b4.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.ant.launcher_1.9.6.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-chrome-driver_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-chromium-driver_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-edge-driver_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-firefox-driver_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-safari-driver_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-ie-driver_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-manager_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-json_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.core.appium_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.api_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-os_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.eclipse.e4.core.contexts_1.12.600.v20240413-1529.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.eclipse.e4.core.services_2.4.400.v20240413-1529.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.eclipse.osgi.services_3.12.100.v20240327-0645.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.eclipse.equinox.common_3.19.100.v20240524-2011.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.platform.core_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.common_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.session.core_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.eclipse.e4.core.di_1.9.500.v20240606-1236.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.execution.core_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.eclipse.equinox.registry_3.12.100.v20240524-2011.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\dev.failsafe_3.3.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.fasterxml.jackson.datatype.jackson-datatype-jsr310_2.17.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.eclipse.e4.core.di.annotations_1.8.400.v20240413-1529.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.core.webui_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-support_4.28.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.beust.jcommander_1.82.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.seleniumhq.selenium.selenium-devtools-v135_4.31.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.core.mobile_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.commons.commons-validator_1.7.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.core.cucumber_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.cucumber.core_3.0.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.cucumber.datatable_1.1.16.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.cucumber.datatable-dependencies_1.1.16.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.cucumber.expressions_5.0.19.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.cucumber.gherkin_5.0.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.cucumber.html_0.2.7.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.cucumber.java_3.0.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.cucumber.tag-expressions_1.1.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.cucumber.junit_3.0.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.core.webservice_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\wsdl4j_1.6.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.google.oauth-client.google-oauth-client_1.22.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.google.http-client.google-http-client_1.22.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.preferences_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.apache.xmlbeans_3.1.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.entity_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\jakarta.xml.ws-api_2.3.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\javax.xml.soap-api_1.4.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.atlassian.oai.swagger-request-validator-core_2.38.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.swagger.compat-spec-parser_1.0.67.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.swagger.core.v3.swagger-annotations_2.2.14.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.swagger.core.v3.swagger-core_2.2.14.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.swagger.core.v3.swagger-models_2.2.14.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.swagger.parser.v3.swagger-parser-core_2.1.16.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.swagger.parser.v3.swagger-parser-v2-converter_2.1.16.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.github.java-json-tools.btf_1.3.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.fasterxml.jackson.dataformat.jackson-dataformat-yaml_2.17.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.yaml.snakeyaml_2.2.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.github.java-json-tools.msg-simple_1.2.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\jackson-core-asl_1.9.13.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\joda-time_2.10.5.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\javax.mail-api_1.6.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.googlecode.libphonenumber_8.11.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.google.guava.failureaccess_1.0.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.swagger.parser.v3.swagger-parser_2.1.16.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.swagger.parser.v3.swagger-parser-v3_2.1.16.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\io.swagger.parser_1.0.67.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.narupley.not-going-to-be-commons-ssl_0.3.20.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.core.windows_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.sun.jna.platform_5.14.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.core.testng_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.testng_7.8.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.codehaus.groovy_3.0.22.v202409302028-e2409\lib\groovy-3.0.22-indy.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\org.codehaus.groovy_3.0.22.v202409302028-e2409\lib\ivy-2.5.2.jar --main groovy.ui.GroovyMain --encoding UTF-8 --indy C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\Libs\TempTestCaseBinding1753644258940.groovy
+
+Host: Intel(R) Core(TM) i5-10200H CPU @ 2.40GHz, 8 cores, 15G,  Windows 11 , 64 bit Build 26100 (10.0.26100.4768)
+Time: Mon Jul 28 02:24:21 2025 SE Asia Standard Time elapsed time: 1.030838 seconds (0d 0h 0m 1s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x0000014acef60d10):  JavaThread "Unknown thread" [_thread_in_vm, id=25924, stack(0x0000001e87400000,0x0000001e87500000)]
+
+Stack: [0x0000001e87400000,0x0000001e87500000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x682eb9]
+V  [jvm.dll+0x8399c8]
+V  [jvm.dll+0x83b473]
+V  [jvm.dll+0x83bae3]
+V  [jvm.dll+0x24715f]
+V  [jvm.dll+0xa7543]
+V  [jvm.dll+0x2d7b87]
+V  [jvm.dll+0x80b89f]
+V  [jvm.dll+0x36b671]
+V  [jvm.dll+0x7ea2cf]
+V  [jvm.dll+0x3f226f]
+V  [jvm.dll+0x3f3da1]
+C  [jli.dll+0x5278]
+C  [ucrtbase.dll+0x37b0]
+C  [KERNEL32.DLL+0x2e8d7]
+C  [ntdll.dll+0x3c34c]
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x00007ff844c87f58, length=0, elements={
+}
+
+Java Threads: ( => current thread )
+
+Other Threads:
+
+=>0x0000014acef60d10 (exited) JavaThread "Unknown thread" [_thread_in_vm, id=25924, stack(0x0000001e87400000,0x0000001e87500000)]
+
+Threads with active compile tasks:
+
+VM state: not at safepoint (not fully initialized)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap address: 0x0000000000000000, size: 0 MB, Compressed Oops mode: 32-bit
+
+CDS archive(s) mapped at: [0x0000000000000000-0x0000000000000000-0x0000000000000000), size 0, SharedBaseAddress: 0x0000000800000000, ArchiveRelocationMode: 1.
+Narrow klass base: 0x0000000000000000, Narrow klass shift: 0, Narrow klass range: 0x0
+
+GC Precious Log:
+<Empty>
+
+GC Heap History (0 events):
+No events
+
+Dll operation events (1 events):
+Event: 0.020 Loaded shared library C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin\java.dll
+
+Deoptimization events (0 events):
+No events
+
+Classes loaded (0 events):
+No events
+
+Classes unloaded (0 events):
+No events
+
+Classes redefined (0 events):
+No events
+
+Internal exceptions (0 events):
+No events
+
+VM Operations (0 events):
+No events
+
+Memory protections (0 events):
+No events
+
+Nmethod flushes (0 events):
+No events
+
+Events (0 events):
+No events
+
+
+Dynamic libraries:
+0x00007ff6d2960000 - 0x00007ff6d296e000 	C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin\javaw.exe
+0x00007ff933d20000 - 0x00007ff933f87000 	C:\WINDOWS\SYSTEM32\ntdll.dll
+0x00007ff933860000 - 0x00007ff933929000 	C:\WINDOWS\System32\KERNEL32.DLL
+0x00007ff931390000 - 0x00007ff931780000 	C:\WINDOWS\System32\KERNELBASE.dll
+0x00007ff92ddd0000 - 0x00007ff92de6e000 	C:\WINDOWS\SYSTEM32\apphelp.dll
+0x00007ff930e50000 - 0x00007ff930f9b000 	C:\WINDOWS\System32\ucrtbase.dll
+0x00007ff92a320000 - 0x00007ff92a337000 	C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin\jli.dll
+0x00007ff92a2c0000 - 0x00007ff92a2de000 	C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin\VCRUNTIME140.dll
+0x00007ff933930000 - 0x00007ff933af5000 	C:\WINDOWS\System32\USER32.dll
+0x00007ff9319d0000 - 0x00007ff9319f7000 	C:\WINDOWS\System32\win32u.dll
+0x00007ff933bf0000 - 0x00007ff933c1b000 	C:\WINDOWS\System32\GDI32.dll
+0x00007ff931250000 - 0x00007ff931388000 	C:\WINDOWS\System32\gdi32full.dll
+0x00007ff931a00000 - 0x00007ff931aa3000 	C:\WINDOWS\System32\msvcp_win.dll
+0x00007ff90fb10000 - 0x00007ff90fdaa000 	C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.4768_none_3e0c112ce331287c\COMCTL32.dll
+0x00007ff933260000 - 0x00007ff933309000 	C:\WINDOWS\System32\msvcrt.dll
+0x00007ff932260000 - 0x00007ff93228f000 	C:\WINDOWS\System32\IMM32.DLL
+0x00007ff92a100000 - 0x00007ff92a10c000 	C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin\vcruntime140_1.dll
+0x00007ff8e3a40000 - 0x00007ff8e3acd000 	C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin\msvcp140.dll
+0x00007ff844150000 - 0x00007ff844dbb000 	C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin\server\jvm.dll
+0x00007ff9337a0000 - 0x00007ff933854000 	C:\WINDOWS\System32\ADVAPI32.dll
+0x00007ff932100000 - 0x00007ff9321a6000 	C:\WINDOWS\System32\sechost.dll
+0x00007ff9322a0000 - 0x00007ff9323b8000 	C:\WINDOWS\System32\RPCRT4.dll
+0x00007ff9321b0000 - 0x00007ff932224000 	C:\WINDOWS\System32\WS2_32.dll
+0x00007ff930cb0000 - 0x00007ff930d0e000 	C:\WINDOWS\SYSTEM32\POWRPROF.dll
+0x00007ff928890000 - 0x00007ff92889b000 	C:\WINDOWS\SYSTEM32\VERSION.dll
+0x00007ff911500000 - 0x00007ff911535000 	C:\WINDOWS\SYSTEM32\WINMM.dll
+0x00007ff930c90000 - 0x00007ff930ca4000 	C:\WINDOWS\SYSTEM32\UMPDC.dll
+0x00007ff92fba0000 - 0x00007ff92fbbb000 	C:\WINDOWS\SYSTEM32\kernel.appcore.dll
+0x00007ff92b990000 - 0x00007ff92b99a000 	C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin\jimage.dll
+0x00007ff9245e0000 - 0x00007ff924821000 	C:\WINDOWS\SYSTEM32\DBGHELP.DLL
+0x00007ff9323c0000 - 0x00007ff932745000 	C:\WINDOWS\System32\combase.dll
+0x00007ff933b00000 - 0x00007ff933be0000 	C:\WINDOWS\System32\OLEAUT32.dll
+0x00007ff924470000 - 0x00007ff9244b3000 	C:\WINDOWS\SYSTEM32\dbgcore.DLL
+0x00007ff9311b0000 - 0x00007ff931249000 	C:\WINDOWS\System32\bcryptPrimitives.dll
+0x00007ff92a3b0000 - 0x00007ff92a3d5000 	C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin\java.dll
+
+dbghelp: loaded successfully - version: 4.0.5 - missing functions: none
+symbol engine: initialized successfully - sym options: 0x614 - pdb path: .;C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin;C:\WINDOWS\SYSTEM32;C:\WINDOWS\WinSxS\amd64_microsoft.windows.common-controls_6595b64144ccf1df_6.0.26100.4768_none_3e0c112ce331287c;C:\Users\murdo\.katalon\packages\KSE-10.2.4\jre\bin\server
+
+VM Arguments:
+jvm_args: -Dgroovy.home=C:\Users\murdo/.groovy -Djava.system.class.loader=groovy.lang.GroovyClassLoader -Xmx2048m -Dfile.encoding=UTF-8 -Dstdout.encoding=UTF-8 -Dstderr.encoding=UTF-8 -XX:+ShowCodeDetailsInExceptionMessages 
+java_command: org.codehaus.groovy.tools.GroovyStarter --classpath C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\keyword;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\Keywords;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\listener;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\Test Listeners;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\lib;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\Libs;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\groovy;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\Include\scripts\groovy;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.core_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\aalto-xml-1.0.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\aspectjweaver-1.9.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\aws-2.20.3-fat.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\browsermob-core-2.1.5.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\byte-buddy-1.14.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\byte-buddy-agent-1.14.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\cglib-3.2.10.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-codec-1.10.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-collections4-4.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-javaflow-20060411.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-logging-1.3.4.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-validator-1.6.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\curvesapi-1.04.jar;C:\Users\murdo\.katalon\package
+java_class_path (initial): C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\keyword;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\listener;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\lib;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin\groovy;C:\Users\murdo\Katalon Studio\Technical Test Soul Parking\bin;C:\Users\murdo\.katalon\packages\KSE-10.2.4\plugins\com.kms.katalon.core_1.0.0.202507110548.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\aalto-xml-1.0.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\aspectjweaver-1.9.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\aws-2.20.3-fat.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\browsermob-core-2.1.5.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\byte-buddy-1.14.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\byte-buddy-agent-1.14.3.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\cglib-3.2.10.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-codec-1.10.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-collections4-4.1.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-javaflow-20060411.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-logging-1.3.4.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\commons-validator-1.6.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\curvesapi-1.04.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\dnsjava-3.6.2.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\ecj-3.21.0.jar;C:\Users\murdo\.katalon\packages\KSE-10.2.4\configuration\resources\lib\fontbox-3.0.4.jar;C:\Users\murdo\.katalon\p
+Launcher Type: SUN_STANDARD
+
+[Global flags]
+     intx CICompilerCount                          = 4                                         {product} {ergonomic}
+     uint ConcGCThreads                            = 2                                         {product} {ergonomic}
+     uint G1ConcRefinementThreads                  = 8                                         {product} {ergonomic}
+   size_t G1HeapRegionSize                         = 1048576                                   {product} {ergonomic}
+    uintx GCDrainStackTargetSize                   = 64                                        {product} {ergonomic}
+   size_t InitialHeapSize                          = 266338304                                 {product} {ergonomic}
+   size_t MarkStackSize                            = 4194304                                   {product} {ergonomic}
+   size_t MaxHeapSize                              = 2147483648                                {product} {command line}
+   size_t MinHeapDeltaBytes                        = 1048576                                   {product} {ergonomic}
+   size_t MinHeapSize                              = 8388608                                   {product} {ergonomic}
+    uintx NonNMethodCodeHeapSize                   = 5839372                                {pd product} {ergonomic}
+    uintx NonProfiledCodeHeapSize                  = 122909434                              {pd product} {ergonomic}
+    uintx ProfiledCodeHeapSize                     = 122909434                              {pd product} {ergonomic}
+    uintx ReservedCodeCacheSize                    = 251658240                              {pd product} {ergonomic}
+     bool SegmentedCodeCache                       = true                                      {product} {ergonomic}
+     bool ShowCodeDetailsInExceptionMessages       = true                                   {manageable} {command line}
+   size_t SoftMaxHeapSize                          = 2147483648                             {manageable} {ergonomic}
+     bool UseCompressedClassPointers               = true                           {product lp64_product} {ergonomic}
+     bool UseCompressedOops                        = true                           {product lp64_product} {ergonomic}
+     bool UseG1GC                                  = true                                      {product} {ergonomic}
+     bool UseLargePagesIndividualAllocation        = false                                  {pd product} {ergonomic}
+
+Logging:
+Log output configuration:
+ #0: stdout all=warning uptime,level,tags
+ #1: stderr all=off uptime,level,tags
+
+Environment Variables:
+JAVA_HOME=C:\Program Files\Java\jdk-17
+PATH=C:/Users/murdo/.katalon/packages/KSE-10.2.4/jre/bin/server;C:/Users/murdo/.katalon/packages/KSE-10.2.4/jre/bin;C:\Program Files\Google\Chrome\Application;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files\Java\jdk1.8.0_202\bin;E:\Git\cmd;C:\Program Files\Java\jdk-17\bin;C:\ProgramData\chocolatey\bin;E:\Maven\apache-maven-3.9.4\bin;E:\Golang\bin;C:\Program Files (x86)\Google\Cloud SDK\google-cloud-sdk\bin;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files\Tesseract-OCR;C:\Program Files\php-8.4.6-src;C:\xampp1;C:\xampp1\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\nodejs\;C:\Users\murdo\AppData\Local\Android\Sdk\platform-tools\;C:\Users\murdo\AppData\Local\Programs\Python\Python311\Scripts\;C:\Users\murdo\AppData\Local\Programs\Python\Python311\;C:\Users\murdo\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_301\bin;C:\Program Files\Azure Data Studio\bin;C:\Users\murdo\AppData\Local\GitHubDesktop\bin;D:\Microsoft VS Code\bin;D:\flutter\flutter\bin;C:\Windows\System32;C:\Users\murdo\go\bin;C:\Users\murdo\AppData\Roaming\Python\Python311\Scripts\nltk.exe;C:\Users\murdo\AppData\Local\Programs\Python\Python310-32\Scripts;C:\Users\murdo\AppData\Roaming\Composer\vendor\bin;C:\Users\murdo\AppData\Roaming\npm;C:\Users\murdo\.katalon\packages\KSE-10.2.4;
+USERNAME=murdo
+OS=Windows_NT
+PROCESSOR_IDENTIFIER=Intel64 Family 6 Model 165 Stepping 2, GenuineIntel
+TMP=C:\Users\murdo\AppData\Local\Temp
+TEMP=C:\Users\murdo\AppData\Local\Temp
+
+
+
+Periodic native trim disabled
+
+
+---------------  S Y S T E M  ---------------
+
+OS:
+ Windows 11 , 64 bit Build 26100 (10.0.26100.4768)
+OS uptime: 0 days 3:23 hours
+Hyper-V role detected
+
+CPU: total 8 (initial active 8) (4 cores per cpu, 2 threads per core) family 6 model 165 stepping 2 microcode 0xe2, cx8, cmov, fxsr, ht, mmx, 3dnowpref, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, lzcnt, tsc, tscinvbit, avx, avx2, aes, erms, clmul, bmi1, bmi2, adx, fma, vzeroupper, clflush, clflushopt, hv
+Processor Information for all 8 processors :
+  Max Mhz: 2400, Current Mhz: 2400, Mhz Limit: 2400
+
+Memory: 4k page, system-wide physical 16205M (4341M free)
+TotalPageFile size 16205M (AvailPageFile size 169M)
+current process WorkingSet (physical memory assigned to process): 13M, peak: 13M
+current process commit charge ("private bytes"): 12M, peak: 13M
+
+vm_info: OpenJDK 64-Bit Server VM (17.0.14+7) for windows-amd64 JRE (17.0.14+7), built on Jan 21 2025 23:40:15 by "admin" with MS VC++ 17.7 (VS2022)
+
+END.

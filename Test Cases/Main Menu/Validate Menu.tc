@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validate Menu</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c17ba113-ede8-4f41-84d7-80abbdcf9ab5</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>d678a313-8332-4002-86f3-761d9efb7291</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/DataMenu (1)</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7edd0fb1-2041-4b52-8ebb-b296f61bc10a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>95c7a0f0-7a4e-46f3-a2bd-422e7517ac10</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>d678a313-8332-4002-86f3-761d9efb7291</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>btn</value>
+      <variableId>2efa8cfa-fee2-4498-a69e-51c8e3b33cc1</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'standard_user'</defaultValue>
+      <description></description>
+      <id>7edd0fb1-2041-4b52-8ebb-b296f61bc10a</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'qcu24s4901FyWDTwXGr6XA=='</defaultValue>
+      <description></description>
+      <id>95c7a0f0-7a4e-46f3-a2bd-422e7517ac10</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>2efa8cfa-fee2-4498-a69e-51c8e3b33cc1</id>
+      <masked>false</masked>
+      <name>btn</name>
+   </variable>
+</TestCaseEntity>

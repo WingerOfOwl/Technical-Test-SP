@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Validate Social Media</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>c033bb1e-0bfe-4a8f-922e-9b4efd8c4c8f</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>d9c222b2-8d9d-4611-9078-7a16ee1ebcd5</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/DataSocialMedia (1)</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>82ded616-7baa-49cd-8a27-52b6e9bdd0fa</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2c2a3a35-0868-4921-881a-b74145d08c0c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>d9c222b2-8d9d-4611-9078-7a16ee1ebcd5</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>SocialMedia</value>
+      <variableId>459c4a93-ebd8-491f-80fe-7ed958570e63</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'standard_user'</defaultValue>
+      <description></description>
+      <id>82ded616-7baa-49cd-8a27-52b6e9bdd0fa</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'qcu24s4901FyWDTwXGr6XA=='</defaultValue>
+      <description></description>
+      <id>2c2a3a35-0868-4921-881a-b74145d08c0c</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>459c4a93-ebd8-491f-80fe-7ed958570e63</id>
+      <masked>false</masked>
+      <name>SocialMedia</name>
+   </variable>
+</TestCaseEntity>

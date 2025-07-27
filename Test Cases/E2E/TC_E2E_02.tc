@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>TC_E2E_02</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>1f6ff812-89c7-4145-ac7f-6186e8a5d022</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ac9b319a-189e-47f5-906f-8fbb07a34318</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f94acb34-f9f5-4601-b6c7-f7917c2302d8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'performance_glitch_user'</defaultValue>
+      <description></description>
+      <id>ac9b319a-189e-47f5-906f-8fbb07a34318</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variable>
+   <variable>
+      <defaultValue>'qcu24s4901FyWDTwXGr6XA=='</defaultValue>
+      <description></description>
+      <id>f94acb34-f9f5-4601-b6c7-f7917c2302d8</id>
+      <masked>false</masked>
+      <name>password</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<WebElementEntity>
+   <description></description>
+   <name>Image Validate LinkedIn</name>
+   <tag></tag>
+   <elementGuidId>ab5c9c45-4326-493c-8b28-d59f7ad092c2</elementGuidId>
+   <selectorCollection>
+      <entry>
+         <key>XPATH</key>
+         <value>//div[@id='base-contextual-sign-in-modal']/div/section/div/div/img</value>
+      </entry>
+      <entry>
+         <key>CSS</key>
+         <value>img.inline-block.relative.w-16.h-16.contextual-sign-in-modal__img.m-auto.lazy-loaded</value>
+      </entry>
+   </selectorCollection>
+   <selectorMethod>XPATH</selectorMethod>
+   <smartLocatorCollection>
+      <entry>
+         <key>SMART_LOCATOR</key>
+         <value>internal:role=img</value>
+      </entry>
+   </smartLocatorCollection>
+   <smartLocatorEnabled>false</smartLocatorEnabled>
+   <useRalativeImagePath>true</useRalativeImagePath>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>tag</name>
+      <type>Main</type>
+      <value>img</value>
+      <webElementGuid>c480e366-0c5a-409f-a7e1-fa62a4b24169</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>class</name>
+      <type>Main</type>
+      <value>inline-block relative w-16 h-16 contextual-sign-in-modal__img m-auto lazy-loaded</value>
+      <webElementGuid>612fe249-eae1-4ad0-b3de-d698ad24c128</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-ghost-classes</name>
+      <type>Main</type>
+      <value>bg-color-entity-ghost-background</value>
+      <webElementGuid>32e20e87-87ad-4347-99b8-b3bc9e8aea0d</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>data-ghost-url</name>
+      <type>Main</type>
+      <value>https://static.licdn.com/aero-v1/sc/h/cs8pjfgyw96g44ln9r7tct85f</value>
+      <webElementGuid>594a44a1-cbda-46b3-8375-abac461838cf</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>aria-busy</name>
+      <type>Main</type>
+      <value>false</value>
+      <webElementGuid>9fa72044-3a17-4a59-b005-d617e3721065</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>src</name>
+      <type>Main</type>
+      <value>https://media.licdn.com/dms/image/v2/C560BAQHlYp4UWQp0RA/company-logo_200_200/company-logo_200_200/0/1677015370794/sauce_labs_logo?e=2147483647&amp;v=beta&amp;t=-KEQSGJCPnDiYFkTBMr1lrp5vzT30cUIsbGslrPHmyw</value>
+      <webElementGuid>09f9ec97-a879-4a0e-b1eb-d2a6ec7f9a15</webElementGuid>
+   </webElementProperties>
+   <webElementProperties>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath</name>
+      <type>Main</type>
+      <value>id(&quot;base-contextual-sign-in-modal&quot;)/div[@class=&quot;modal__overlay flex items-center bg-color-background-scrim justify-center fixed bottom-0 left-0 right-0 top-0 opacity-0 invisible pointer-events-none z-[1000] transition-[opacity] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] duration-[0.17s] py-4 modal__overlay--visible&quot;]/section[@class=&quot;max-h-full modal__wrapper overflow-auto p-0 bg-color-surface max-w-[1128px] min-h-[160px] relative scale-[0.25] shadow-sm shadow-color-border-faint transition-[transform] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] duration-[0.33s] focus:outline-0
+              
+              w-[1128px] mamabear:w-[744px] babybear:w-[360px]
+              
+              rounded-md&quot;]/div[@class=&quot;modal__main w-full&quot;]/div[@class=&quot;contextual-sign-in-modal__screen contextual-sign-in-modal__context-screen flex flex-col my-4 mx-3&quot;]/img[@class=&quot;inline-block relative w-16 h-16 contextual-sign-in-modal__img m-auto lazy-loaded&quot;]</value>
+      <webElementGuid>125357b1-0e10-4f45-b3a9-112942153dcc</webElementGuid>
+   </webElementProperties>
+   <webElementXpaths>
+      <isSelected>true</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:idRelative</name>
+      <type>Main</type>
+      <value>//div[@id='base-contextual-sign-in-modal']/div/section/div/div/img</value>
+      <webElementGuid>0b1ddc4e-7f64-4ac7-a4ea-505793d2dd66</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:img</name>
+      <type>Main</type>
+      <value>(//img[contains(@src,'https://media.licdn.com/dms/image/v2/C560BAQHlYp4UWQp0RA/company-logo_200_200/company-logo_200_200/0/1677015370794/sauce_labs_logo?e=2147483647&amp;v=beta&amp;t=-KEQSGJCPnDiYFkTBMr1lrp5vzT30cUIsbGslrPHmyw')])[2]</value>
+      <webElementGuid>2b5dd037-d4cc-4e4c-bd89-46a2eeb349fb</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:position</name>
+      <type>Main</type>
+      <value>//div/section/div/div/img</value>
+      <webElementGuid>4e53fd18-339b-4e9c-a2a3-89e325c6777a</webElementGuid>
+   </webElementXpaths>
+   <webElementXpaths>
+      <isSelected>false</isSelected>
+      <matchCondition>equals</matchCondition>
+      <name>xpath:customAttributes</name>
+      <type>Main</type>
+      <value>//img[@src = 'https://media.licdn.com/dms/image/v2/C560BAQHlYp4UWQp0RA/company-logo_200_200/company-logo_200_200/0/1677015370794/sauce_labs_logo?e=2147483647&amp;v=beta&amp;t=-KEQSGJCPnDiYFkTBMr1lrp5vzT30cUIsbGslrPHmyw']</value>
+      <webElementGuid>dd67e541-b1ea-47a3-8ed9-68e13411f23d</webElementGuid>
+   </webElementXpaths>
+</WebElementEntity>

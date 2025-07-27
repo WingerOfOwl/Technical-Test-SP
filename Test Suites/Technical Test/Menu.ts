@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestSuiteEntity>
+   <description></description>
+   <name>Menu</name>
+   <tag></tag>
+   <isRerun>false</isRerun>
+   <mailRecipient></mailRecipient>
+   <numberOfRerun>3</numberOfRerun>
+   <pageLoadTimeout>30</pageLoadTimeout>
+   <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
+   <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
+   <rerunImmediately>true</rerunImmediately>
+   <testSuiteGuid>27a72569-5d25-45c9-af6b-fdefec8d25d3</testSuiteGuid>
+   <testCaseLink>
+      <guid>9b159cd3-c4fb-4d67-9084-82f787f8f058</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/Main Menu/Validate Menu</testCaseId>
+      <testDataLink>
+         <combinationType>ONE</combinationType>
+         <id>b0bff659-3677-432f-8d7b-93b149440edf</id>
+         <iterationEntity>
+            <iterationType>ALL</iterationType>
+            <value></value>
+         </iterationEntity>
+         <testDataId>Data Files/DataMenu (1)</testDataId>
+      </testDataLink>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>7edd0fb1-2041-4b52-8ebb-b296f61bc10a</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>95c7a0f0-7a4e-46f3-a2bd-422e7517ac10</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId>b0bff659-3677-432f-8d7b-93b149440edf</testDataLinkId>
+         <type>DATA_COLUMN</type>
+         <value>btn</value>
+         <variableId>2efa8cfa-fee2-4498-a69e-51c8e3b33cc1</variableId>
+      </variableLink>
+   </testCaseLink>
+</TestSuiteEntity>
